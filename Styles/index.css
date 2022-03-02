@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif; }
+
+.banner {
+  width: 100%;
+  background: #FFECD6;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  border-bottom: 1px solid #888;
+  box-shadow: 0 5px 10px #000; }
+  .banner .logo {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    background: teal;
+    font-family: "Abril Fatface", serif; }
+    .banner .logo .imagen, .banner .logo .g, .banner .logo .e, .banner .logo .m, .banner .logo .i, .banner .logo .x, .banner .logo .icn-hat {
+      position: absolute; }
+    .banner .logo .imagen {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 50%;
+      z-index: 2; }
+    .banner .logo span {
+      font-size: 6em; }
+    .banner .logo .g, .banner .logo .e, .banner .logo .icn-hat {
+      top: -110px; }
+    .banner .logo .g {
+      left: 23.5%; }
+    .banner .logo .e {
+      left: 43%;
+      z-index: 10; }
+    .banner .logo .icn-hat {
+      left: 59%;
+      -webkit-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+      transform: rotate(25deg); }
+    .banner .logo .m {
+      left: 33%; }
+      .banner .logo .m::before {
+        content: "M";
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+        z-index: 10; }
+    .banner .logo .i {
+      left: 52%;
+      z-index: 3; }
+    .banner .logo .x {
+      left: 68%; }
+
+.historia {
+  position: relative;
+  background: #011627;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 30px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .historia .izquierda {
+    width: 20%;
+    height: 100%; }
+    .historia .izquierda .titulo {
+      width: 100%;
+      color: #FFECD6;
+      font-family: "Abril Fatface", serif;
+      text-transform: uppercase;
+      font-size: 4em;
+      line-height: .7;
+      letter-spacing: 15px;
+      text-shadow: 1px 1px #000, 2px 2px #000, 3px 3px 3px #000, 5px 4px 5px #000; }
+  .historia .derecha {
+    width: 60%;
+    margin-top: 100px;
+    font-size: 1.4em;
+    color: #ddd;
+    line-height: 1.6;
+    letter-spacing: 1px; }
+
+.productos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #983628;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .productos .titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    margin: 50px 0;
+    color: #011627;
+    font-weight: bold;
+    font-family: "Abril Fatface", serif; }
+  .productos .contenedorproducto {
+    width: 20%;
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 100px; }
+    .productos .contenedorproducto img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: -5%;
+      z-index: 10; }
+    .productos .contenedorproducto .producto {
+      background: #FFECD6;
+      position: relative;
+      padding: 15px 15px 50px 15px;
+      border-radius: 10px; }
+      .productos .contenedorproducto .producto .nombre {
+        padding-top: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        color: #3A506B; }
+      .productos .contenedorproducto .producto p {
+        color: #011627;
+        text-align: justify;
+        line-height: 1.4; }
+    .productos .contenedorproducto:nth-child(13) .nombre {
+      letter-spacing: 1.7px; }
+
+.ubicacion {
+  background: #c5d1df;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .ubicacion .info {
+    padding: 30px; }
+    .ubicacion .info .titulo {
+      font-size: 3em;
+      text-align: center;
+      margin: 0 0 30px 0;
+      border-bottom: 2px solid #983628;
+      color: #983628;
+      text-transform: uppercase;
+      letter-spacing: 15px;
+      padding-bottom: 20px;
+      font-family: "Abril Fatface", serif; }
+    .ubicacion .info p {
+      width: 80%;
+      margin: auto;
+      line-height: 1.5;
+      font-size: 1.3em;
+      color: #011627;
+      text-align: center; }
+  .ubicacion iframe {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    pointer-events: none; }
+
+.contacto {
+  background-image: url("../img/fomulario.jpeg");
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  .contacto .titulo {
+    text-align: right;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: "Abril Fatface", serif;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7), -1px -1px 0 rgba(255, 255, 255, 0.7); }
+  .contacto .opinion {
+    background: #983628;
+    font-size: .8em;
+    width: 50%;
+    text-align: center;
+    color: #eee;
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 60px; }
+  .contacto .rellenar {
+    color: #983628;
+    text-transform: uppercase;
+    border-bottom: 2px solid #983628;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    margin: 30px auto; }
+  .contacto form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .contacto form .izquierda, .contacto form .derecha {
+      width: 48%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .contacto form .izquierda input, .contacto form .izquierda textarea, .contacto form .derecha input, .contacto form .derecha textarea {
+        margin: 8px 0;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        border: none;
+        line-height: 2;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid #333;
+        border-radius: 3px;
+        padding: 5px 10px;
+        transition: .8s;
+        color: #333; }
+        .contacto form .izquierda input:hover, .contacto form .izquierda textarea:hover, .contacto form .derecha input:hover, .contacto form .derecha textarea:hover {
+          background: #fff; }
+        .contacto form .izquierda input:focus, .contacto form .izquierda textarea:focus, .contacto form .derecha input:focus, .contacto form .derecha textarea:focus {
+          color: #fff;
+          background: rgba(58, 80, 107, 0.8); }
+      .contacto form .izquierda textarea, .contacto form .derecha textarea {
+        background: #fff;
+        border-bottom: none; }
+        .contacto form .izquierda textarea:focus, .contacto form .derecha textarea:focus {
+          color: #333;
+          background: #fff; }
+      .contacto form .izquierda .enviar, .contacto form .derecha .enviar {
+        background: seagreen;
+        border-bottom: none; }
+        .contacto form .izquierda .enviar:focus, .contacto form .derecha .enviar:focus {
+          background: lightseagreen; }
+        .contacto form .izquierda .enviar:hover, .contacto form .derecha .enviar:hover {
+          background: lightseagreen;
+          color: #333; }
+        .contacto form .izquierda .enviar:active, .contacto form .derecha .enviar:active {
+          background: #333;
+          color: #fff; }
